@@ -17,7 +17,7 @@ Estas instrucciones te permitirán obtener una copia del proyecto y ponerla en m
 Clona este proyecto usando este comando en la terminal:
 
 ```
-git clone https://github.com/rmesaf/cidingenieria.com.*git*
+git clone https://github.com/rmesaf/dwfs-actividad-1.git
 ```
 
 Instala todas las dependencias necesarias con este comando en la terminal:
