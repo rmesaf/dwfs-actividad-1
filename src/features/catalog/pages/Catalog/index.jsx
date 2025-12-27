@@ -9,12 +9,11 @@ import Container from 'shared/components/Container';
 import Link from "shared/components/Link";
 import useCatalog from 'features/catalog/hooks/useCatalog.js';
 import useCart from 'features/cart/hooks/useCart';
-import quantitySelector from "features/catalog/components/QuantitySelector/index.jsx";
+import QuantitySelector from "features/catalog/components/QuantitySelector/index.jsx";
+import Icon from "shared/components/Icon/index.jsx";
 
 // Styles
 import './styles.scss'
-import Icon from "shared/components/Icon/index.jsx";
-import QuantitySelector from "features/catalog/components/QuantitySelector/index.jsx";
 
 function CatalogPage() {
     const { books, isLoading, error } = useCatalog({ query: 'subject:fiction' });
@@ -69,27 +68,13 @@ function CatalogPage() {
                             <h2>{book.title}</h2>
                         </Link>
                         <p>Authors: {book.authors.join(", ")}</p>
-                        <div
-                            style={{
-                                display: 'flex',
-                                justifyContent: 'space-between',
-                                alignItems: 'center',
-                                gap: '10px',
-                                width: '100%',
-                            }}
-                        >
+                        <div className="catalog__list__item-info">
                             <span>${book.price}</span>
                             <HeartButton
                                 isFavorite={favorites[book.id]}
                                 toggleFavorite={() => toggleFavorite(book.id)}
                             />
-                            <div
-                                style={{
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    gap: '5px',
-                                }}
-                            >
+                            <div className="catalog__list__item-info__rating">
                                 <Icon
                                     name="star-full"
                                     size={20}
