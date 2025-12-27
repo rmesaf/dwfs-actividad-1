@@ -15,7 +15,14 @@ export function cartReducer(state, action) {
             const item = action.payload;
             const existingItem = state.items.find(i => i.id === item.id);
             if (existingItem) {
-                return state;
+                return {
+                    ...state,
+                    items: state.items.map(i =>
+                        i.id === item.id
+                            ? { ...i, quantity: i.quantity + item.quantity }
+                            : i
+                    ),
+                };
             }
             return {
                 ...state,

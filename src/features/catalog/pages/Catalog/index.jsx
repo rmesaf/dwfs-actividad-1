@@ -1,5 +1,6 @@
 // Packages
 import React from 'react';
+import { toast } from 'sonner';
 
 // App
 import Button from 'shared/components/Button';
@@ -18,6 +19,7 @@ function CatalogPage() {
     const handleOnAddItemClick = (e, book) => {
         e.preventDefault();
         addItem({ ...book, quantity: 1 });
+        toast.success(`Added "${book.title}" to cart!`);
     }
 
     if (isLoading) return <p>Cargando catálogo...</p>;

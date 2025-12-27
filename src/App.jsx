@@ -1,5 +1,6 @@
 // Packages
 import React from 'react';
+import { Toaster } from 'sonner';
 
 // App
 import Header from 'shared/components/Header';
@@ -13,6 +14,7 @@ import './App.scss'
 function App() {
   return (
     <CartProvider>
+      <Toaster position="top-right" richColors />
       <Header />
       <main className='app-main'>
         <AppRouter />
