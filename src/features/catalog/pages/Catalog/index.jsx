@@ -9,14 +9,16 @@ import Container from 'shared/components/Container';
 import Link from "shared/components/Link";
 import useCatalog from 'features/catalog/hooks/useCatalog.js';
 import useCart from 'features/cart/hooks/useCart';
+import quantitySelector from "features/catalog/components/QuantitySelector/index.jsx";
 
 // Styles
 import './styles.scss'
 import Icon from "shared/components/Icon/index.jsx";
+import QuantitySelector from "features/catalog/components/QuantitySelector/index.jsx";
 
 function CatalogPage() {
     const { books, isLoading, error } = useCatalog({ query: 'subject:fiction' });
-    const { addItem, items, isInCart } = useCart();
+    const { addItem, items, updateQuantity, isInCart } = useCart();
 
     const [favorites, setFavorites] = useState(
         books.reduce((acc, book) => {
@@ -38,6 +40,14 @@ function CatalogPage() {
         toast.success(`Added "${book.title}" to cart!`);
     }
 
+    const handleQuantityChange = (bookId, newQuantity) => {
+        updateQuantity(bookId, newQuantity);
+    };
+
+    const isInCartAndHasQuantity = (bookId) => {
+        return isInCart(bookId) && items.some(item => item.id === bookId && item.quantity > 0);
+    };
+
     if (isLoading) return <p>Cargando catálogo...</p>;
     if (error) return <p>Error: {String(error.message)}</p>;
 
@@ -56,7 +66,7 @@ function CatalogPage() {
                     <li className="catalog__list__item" key={book.id}>
                         <img src={book.thumbnail} alt={book.title} />
                         <Link className="catalog__list__item-link" to={`/product/${book.id}`}>
-                            <h2>{book.title}</h2>  {/* El título se truncará si es demasiado largo */}
+                            <h2>{book.title}</h2>
                         </Link>
                         <p>Authors: {book.authors.join(", ")}</p>
                         <div
@@ -88,8 +98,11 @@ function CatalogPage() {
                                 <span>{book.points}</span>
                             </div>
                         </div>
-                        {isInCart(book.id) ? (
-                            <p>in cart</p>
+                        {isInCartAndHasQuantity(book.id) ? (
+                            <QuantitySelector
+                                numOrder={items.find(item => item.id === book.id)?.quantity || 1}
+                                onChange={(newQuantity) => handleQuantityChange(book.id, newQuantity)}
+                            />
                         ) : (
                             <Button onClick={e => handleOnAddItemClick(e, book)}>
                                 Agregar al carrito

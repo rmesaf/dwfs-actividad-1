@@ -25,7 +25,8 @@ function useCatalog(config, swrOptions = {}) {
            return {
                ...book,
                isFavorite: false,
-               points: 4.5
+               points: 4.5,
+               order:0
            };
         });
     };
