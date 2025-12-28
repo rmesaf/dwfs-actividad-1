@@ -27,11 +27,6 @@
             @include from-desktop {
                 width: calc(25% - 1rem);
             }
-
-            &-link {
-                text-decoration: none;
-            }
         }
-        
     }
 }
