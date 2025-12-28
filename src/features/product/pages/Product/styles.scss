@@ -1,0 +1,253 @@
+@use 'shared/styles/abstracts.scss' as *;
+@use 'shared/styles/breakpoints.scss' as *;
+
+// Estilos para la página del producto, el contendero
+.detalle-producto {
+  padding: 20px 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+// margen para separar la parte superior del contenido
+.detalle-producto__arriba {
+  margin-bottom: 30px;
+}
+
+// Navegacion
+.detalle-producto__ruta{
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap; // Esto es para qye si el texto es largo, se muestre en varias líneas.
+  gap: 5px;
+}
+
+.detalle-producto__ruta span {
+  font-weight: 400; // grosor de texto
+}
+
+// Sección principal con imagen + detalles
+.detalle-producto__principal {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.detalle-producto__imagen {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+}
+
+.detalle-producto__imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+// Información del producto
+.detalle-producto__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.detalle-producto__categoria {
+  font-size: 14px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.detalle-producto__titulo {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0;
+  color: #333;
+}
+
+.detalle-producto__autor {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+.detalle-producto__editorial {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+.detalle-producto__editorial .etiqueta {
+  font-weight: 700;
+  color: #333;
+}
+
+.detalle-producto__fila-precio {
+  display: flex;
+  gap: 15px;
+  align-items: baseline;
+}
+
+.detalle-producto__precio {
+  font-size: 24px;
+  margin: 0;
+}
+
+.detalle-producto__stock {
+  margin: 0;
+}
+
+.detalle-producto__subtitulo {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 25px 0 10px 0;
+  color: #333;
+}
+
+.detalle-producto__resumen {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+  max-width: 500px;
+}
+
+// Acciones (cantidad y botón de añadir al carrito - pendiente poner la imgagen del carrito)
+.detalle-producto__acciones {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+}
+
+.selector-cantidad {
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.selector-cantidad button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: white;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+// lo de cambiar el color cuando pasa el ratón
+.selector-cantidad button:hover {
+  background-color: #e8e8e8;
+}
+
+.selector-cantidad span {
+  padding: 0 15px;
+  font-weight: 600;
+  min-width: 30px;
+  text-align: center;
+}
+
+.boton-añadir-carrito {
+  background-color: #666;
+  color: white;
+  padding: 12px 30px;
+  font-size: 16px;
+}
+
+// lo de cambiar el color cuando pasa el ratón
+.boton-añadir-carrito:hover {
+  background-color: #AAAAAA;
+}
+
+// Pestañas
+.detalle-producto__pestañas {
+  margin-top: 50px;
+}
+
+.encabezado-pestañas {
+  display: flex;
+  border-bottom: 2px solid #e0e0e0;
+  background-color: #fafafa;
+  border-radius: 8px 8px 0 0;
+}
+
+.pestana {
+  padding: 15px 25px;
+  border: none;
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #666;
+  transition: all 0.2s;
+  border-radius: 6px 6px 0 0;
+}
+
+.pestana--activa {
+  background-color: white;
+  color: #3498db;
+  border-bottom: 3px solid #3498db;
+  font-weight: 600;
+}
+
+// lo de cambiar el color cuando pasa el ratón
+.pestana:hover {
+  background-color: #f0f0f0;
+}
+
+.contenido-pestañas {
+  padding: 75px;
+  border: 2px solid #e0e0e0;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  background-color: #fff;
+}
+
+.placeholder-pestañas {
+  font-size: 15px;
+  color: #777;
+  line-height: 1.6;
+  margin: 0;
+}
+
+// Responsive - Tablets y más grande
+@media (min-width: 768px) {
+  .detalle-producto {
+    padding: 40px 30px;
+  }
+  
+  .detalle-producto__principal {
+    flex-direction: row;
+    gap: 40px;
+  }
+  
+  .detalle-producto__imagen {
+    flex: 0 0 35%;
+  }
+  
+  .detalle-producto__info {
+    flex: 1;
+  }
+}
+
+// Responsive - Desktop grande
+@media (min-width: 1024px) {
+  .detalle-producto {
+    padding: 50px 60px;
+  }
+}

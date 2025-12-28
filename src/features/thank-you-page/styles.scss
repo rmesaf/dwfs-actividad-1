@@ -1,0 +1,118 @@
+@use 'shared/styles/abstracts.scss' as *;
+@use 'shared/styles/breakpoints.scss' as *;
+
+
+.agradecimiento__principal {
+  min-height: 100vh; // Toma toda la altura de viewport
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-springWood;
+  color: $color-mineShaft;
+  align-items: center;
+  justify-content: center; 
+  padding: 2rem 1rem;
+}
+
+.agradecimiento__contenido {
+  width: 100%;
+  max-width: 1200px; // Limita el ancho máximo
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 auto; // Centrado horizontal
+}
+
+.agradecimiento__mensaje h1 {
+    @include font-montserrat(2rem, 700);
+    margin-bottom: 1rem;
+  }
+
+.agradecimiento__mensaje p {
+    @include font-montserrat(1rem, 400);
+    max-width: 26rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+
+.agradecimiento__acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.agradecimiento__imagen {
+  display: flex;
+  justify-content: center;
+}
+
+
+// Resto de estilos sin cambios...
+.imagen-mensaje {
+  width: 100%;
+  max-width: 26.25rem;
+  aspect-ratio: 4 / 3;
+  background-color: #e5e5e5;
+  border-radius: 0.5rem;
+}
+
+.boton--pedidos {
+  @include font-montserrat(1rem, 600);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 150ms ease;
+  background-color: #333;
+  color: #fff;
+}
+
+.boton--pedidos:hover { 
+  background-color: #111;
+}
+
+.boton--seguircomprando {
+  @include font-montserrat(1rem, 600);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 150ms ease;
+  background-color: transparent;
+  color: #333;
+  border-color: #333;
+}
+
+.boton--seguircomprando:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+
+@include from-tablet {
+  .agradecimiento__principal {
+    justify-content: center; // ← Mantiene centrado vertical
+  }
+
+  .agradecimiento__contenido {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  .agradecimiento__mensaje {
+    flex: 1;
+  }
+
+  .agradecimiento__imagen {
+    justify-content: flex-end;
+  }
+}
+
+
+@include from-desktop {
+  .agradecimiento__principal {
+    padding: 4rem 2rem;
+  }
+}
