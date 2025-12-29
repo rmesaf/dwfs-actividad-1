@@ -15,11 +15,7 @@ function App() {
   return (
     <CartProvider>
       <Toaster position="top-right" richColors />
-      <Header />
-      <main className='app-main'>
-        <AppRouter />
-      </main>
-      <Footer />
+      <AppRouter />
     </CartProvider>
   )
 }

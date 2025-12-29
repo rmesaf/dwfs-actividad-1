@@ -15,6 +15,12 @@
         height: 100%;
     }
 
+    &__search {
+        flex: 1;
+        max-width: 500px;
+        margin: 0 2rem;
+    }
+
     &__cart {
         display: flex;
         align-items: center;

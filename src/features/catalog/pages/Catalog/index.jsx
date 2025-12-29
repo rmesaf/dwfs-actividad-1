@@ -20,7 +20,6 @@ function CatalogPage() {
     return (
         <Container className='catalog'>
             <h1>Welcome to page: Catalog!</h1>
-            <SearchInput />
             <div className='catalog__links'>
                 <Link to="/search-results">Go to Search Results</Link>
                 <Link to="/checkout">Go to Checkout</Link>

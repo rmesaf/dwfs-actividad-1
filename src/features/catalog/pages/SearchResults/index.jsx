@@ -31,10 +31,24 @@ function SearchResultsPage() {
                 Buscando: <strong>{query}</strong>
             </p>
 
-            <Link to="/catalog">← Volver al catálogo</Link>
+            <Link to="/catalog" className="search-results__back">
+                ← Volver al catálogo
+            </Link>
 
             {filteredBooks.length === 0 ? (
-                <p>No se encontraron libros.</p>
+                <div className="search-results__empty">
+                    <img
+                        src="/src/assets/images/no-results.svg"
+                        alt="No se encontraron resultados"
+                    />
+
+                    <div className="search-results__empty-text">
+                        <h2>No encontramos el libro solicitado</h2>
+                        <p>
+                            Intenta con otro título o revisa si lo escribiste correctamente.
+                        </p>
+                    </div>
+                </div>
             ) : (
                 <ul className="search-results__list">
                     {filteredBooks.map((book) => (
