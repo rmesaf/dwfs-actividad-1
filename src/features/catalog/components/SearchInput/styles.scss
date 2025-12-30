@@ -1,21 +1,19 @@
+@use 'shared/styles/abstracts.scss' as *;
+
 .search-input {
-    margin-left: 2rem;
+    & input {
+        @include font-montserrat(1rem, 600);
+        border-radius: 6px;
+        border: 1px solid $color-alto;
+        height: 36px;
+        outline: none;
+        padding: 0 1rem;
+        flex: 1;
+        max-width: to-rem(430);
+        
+        &::placeholder {
+            color: $color-alto;
+        }
+    }
 }
 
-.search-input input {
-    height: 36px;
-    width: 420px;          
-    padding: 0 1rem;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-
-    font-size: 14px;       
-    font-weight: 600;      
-    font-family: Arial, sans-serif;
-
-    outline: none;
-}
-
-.search-input input::placeholder {
-    color: #999;
-}

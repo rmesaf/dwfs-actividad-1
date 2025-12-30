@@ -15,7 +15,7 @@ export default function Header() {
         <header className='app-header'>
             <Container className='app-header__container'>
                 <span className='app-header__logo'>RDP</span>
-                <SearchInput />
+                <SearchInput className="app-header__search"/>
                 <div className='app-header__cart'>
                     <Cart />
                 </div>

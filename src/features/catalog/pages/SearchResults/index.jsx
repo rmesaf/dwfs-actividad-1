@@ -3,6 +3,7 @@ import React from 'react';
 import { useSearchParams } from 'react-router-dom';
 
 // App
+import Book from 'features/catalog/components/Book';
 import Container from 'shared/components/Container';
 import Link from 'shared/components/Link';
 import { useCatalog } from 'features/catalog/hooks/useCatalog';
@@ -47,11 +48,7 @@ function SearchResultsPage() {
             ) : (
                 <ul>
                     {filteredBooks.map(book => (
-                        <li key={book.id}>
-                            <h2>{book.title}</h2>
-                            <p>{book.authors.join(', ')}</p>
-                            <p>${book.price}</p>
-                        </li>
+                        <Book className="catalog__list-item" key={book.id} book={book} />
                     ))}
                 </ul>
             )}

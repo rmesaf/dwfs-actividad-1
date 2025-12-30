@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+// Packages
+import { useState } from 'react';
+import cn from 'classnames';
+// App
 import { useNavigate } from 'react-router-dom';
 
 import './styles.scss';
 
-function SearchInput() {
+function SearchInput({ className }) {
     const [value, setValue] = useState('');
     const navigate = useNavigate();
 
@@ -15,7 +18,7 @@ function SearchInput() {
     };
 
     return (
-        <div className="search-input">
+        <div className={cn("search-input", className)}>
             <input
                 type="text"
                 placeholder="Buscar libros por título..."

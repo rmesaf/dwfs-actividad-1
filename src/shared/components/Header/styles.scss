@@ -12,15 +12,27 @@
         align-items: center;
         height: 100%;
         width: 100%;
+        gap: 1rem;
     }
 
     &__logo {
         @include font-montserrat(2rem, 600);
+        order: 0;
     }
 
     &__cart {
         display: flex;
         align-items: center;
         margin-left: auto;
+        order: 1;
+    }
+
+    &__search {
+        display: none;
+
+        @include from-tablet {
+            display: flex;
+        }
+
     }
 }
