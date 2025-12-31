@@ -62,22 +62,22 @@ function Book ({
                         />
                     </div>
                 </div>
-                <div className='book__actions'>
-                    {isInCartAndHasQuantity(book?.id) ? (
-                        <>
-                            <QuantitySelector
-                                numOrder={items.find(item => item.id === book?.id)?.quantity || 1}
-                                onChange={(newQuantity) => handleQuantityChange(book?.id, newQuantity)}
-                            />
-                            <TrashButton className='book__action-delete' deleteItem={() => handleOnDeleteItemClick(book?.id)} />
-                        </>
-                    ) : (
-                        <Button className='book__action-add' onClick={e => handleOnAddItemClick(e, book)}>
-                            Agregar al carrito
-                        </Button>
-                    )}
-                </div>
             </Link>
+            <div className='book__actions'>
+                {isInCartAndHasQuantity(book?.id) ? (
+                    <>
+                        <QuantitySelector
+                            numOrder={items.find(item => item.id === book?.id)?.quantity || 1}
+                            onChange={(newQuantity) => handleQuantityChange(book?.id, newQuantity)}
+                        />
+                        <TrashButton className='book__action-delete' deleteItem={() => handleOnDeleteItemClick(book?.id)} />
+                    </>
+                ) : (
+                    <Button className='book__action-add' onClick={e => handleOnAddItemClick(e, book)}>
+                        Agregar al carrito
+                    </Button>
+                )}
+            </div>
         </li>
     )
 }

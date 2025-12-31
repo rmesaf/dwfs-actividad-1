@@ -5,7 +5,8 @@ import Button from 'shared/components/Button';
 import './styles.scss';
 
 const QuantitySelector = ({ numOrder, onChange }) => {
-    const handleDecrement = () => {
+    const handleDecrement = e => {
+        e.preventDefault();
         if (numOrder > 0) {
             onChange(numOrder - 1);
         }
@@ -16,6 +17,7 @@ const QuantitySelector = ({ numOrder, onChange }) => {
     };
 
     const handleInputChange = (e) => {
+        e.preventDefault();
         const value = parseInt(e.target.value, 10);
         if (!isNaN(value) && value >= 0) {
             onChange(value);
@@ -24,7 +26,7 @@ const QuantitySelector = ({ numOrder, onChange }) => {
 
     return (
         <div className="quantity-control">
-            <Button className="quantity-control__button" onClick={handleDecrement} aria-label="Decrement">
+            <Button className="quantity-control__button" onClick={e => handleDecrement(e)} aria-label="Decrement">
                 -
             </Button>
             <input
@@ -34,7 +36,7 @@ const QuantitySelector = ({ numOrder, onChange }) => {
                 onChange={handleInputChange}
                 min="0"
             />
-            <Button className="quantity-control__button" onClick={handleIncrement} aria-label="Increment">
+            <Button className="quantity-control__button" onClick={e => handleIncrement(e)} aria-label="Increment">
                 +
             </Button>
         </div>
