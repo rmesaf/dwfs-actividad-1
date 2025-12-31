@@ -1,10 +1,11 @@
 // Packages
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 // App
 import Container from 'shared/components/Container';
 import Link from 'shared/components/Link';
+import WelcomeImage from 'assets/images/welcome.svg'
 
 // Styles
 import './styles.scss'
@@ -36,7 +37,7 @@ function WelcomePage() {
                 <p className='welcome__countdown'>Redirigiendo en {countdown} segundos...</p>
             </div>
             <div className='welcome__image'>
-                <img src='./assets/welcome.svg' alt='A person welcoming' />
+                <img src={WelcomeImage} alt='A person welcoming' />
             </div>
         </Container>
     )

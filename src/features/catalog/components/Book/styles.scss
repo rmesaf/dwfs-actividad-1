@@ -91,7 +91,9 @@
 
     p {
         @include font-montserrat(1rem, 400);
+        @include truncate-text(2);
         color: $color-doveGray;
         padding: 0 0.5rem;
+        min-height: 26px;
     }
 }

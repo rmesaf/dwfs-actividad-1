@@ -3,14 +3,14 @@ import cn from 'classnames'
 import { toast } from 'sonner';
 
 // App
-import Button from 'shared/components/Button';
-import HeartButton from "features/catalog/components/HeartButton/index.jsx";
-import Icon from "shared/components/Icon/index.jsx";
-import Link from "shared/components/Link";
-import TrashButton from 'features/catalog/components/TrashButton';
-import QuantitySelector from "features/catalog/components/QuantitySelector/index.jsx";
 import { formatCurrency } from 'shared/utils/formatCurrency';
 import { useCart } from 'features/cart/hooks/useCart';
+import Button from 'shared/components/Button';
+import HeartButton from "features/catalog/components/HeartButton";
+import Icon from "shared/components/Icon";
+import Link from "shared/components/Link";
+import QuantitySelector from "features/catalog/components/QuantitySelector";
+import TrashButton from 'features/catalog/components/TrashButton';
 
 // Styles
 import './styles.scss';

@@ -4,6 +4,7 @@ import React from 'react';
 // App
 import Cart from 'features/cart/components/Cart';
 import Container from 'shared/components/Container';
+import Link from 'shared/components/Link';
 import SearchInput from 'features/catalog/components/SearchInput';
 
 
@@ -14,7 +15,7 @@ export default function Header() {
     return (
         <header className='app-header'>
             <Container className='app-header__container'>
-                <span className='app-header__logo'>RDP</span>
+                <Link href="/catalog" className='app-header__logo'>RDP</Link>
                 <SearchInput className="app-header__search"/>
                 <div className='app-header__cart'>
                     <Cart />

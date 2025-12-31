@@ -5,8 +5,10 @@ import { toast } from 'sonner';
 // App
 import Button from 'shared/components/Button';
 import Container from 'shared/components/Container';
+import EmptyState from 'shared/components/EmptyState';
 import Icon from 'shared/components/Icon'
 import Link from 'shared/components/Link';
+import QuantitySelector from "features/catalog/components/QuantitySelector";
 import { formatCurrency } from 'shared/utils/formatCurrency';
 import { useCatalog } from 'features/catalog/hooks/useCatalog.js';
 import { useCart } from 'features/cart/hooks/useCart';
@@ -17,25 +19,15 @@ import './styles.scss';
 function ProductPage() {
   const { productId } = useParams();
   const navigate = useNavigate();
-  const { addItem, isInCart, removeItem } = useCart();
+  const {
+    addItem,
+    isInCart,
+    items,
+    removeItem,
+    updateQuantity,
+  } = useCart();
 
-  // Utilizamos la misma query que en Catalog
-  const { books, isLoading, error } = useCatalog({ query: 'subject:fiction' });
-
-  if (isLoading) return <p>Cargando libro...</p>;
-  if (error) return <p>Error: {String(error.message)}</p>;
-
-  // Buscamos dentro de la lista de libros del productId correspondiente
-  const book = books.find((b) => b.id === productId);
-
-  if (!book) {
-    return (
-      <Container className="product">
-        <p>Libro no encontrado.</p>
-        <Link to="/catalog">Volver al catálogo</Link>
-      </Container>
-    );
-  }
+  const { data, isLoading, error } = useCatalog({ query:`isbn:${productId}` });
 
   const handleOnAddItemClick = book => {
       addItem({ ...book, quantity: 1 });
@@ -48,6 +40,30 @@ function ProductPage() {
 
   const handleRemoveItem = id => {
     removeItem(id)
+  }
+
+  const handleQuantityChange = (bookId, newQuantity) => {
+      updateQuantity(bookId, newQuantity);
+    };
+
+  if (isLoading) return <p>Cargando libro...</p>;
+  if (error) return <p>Error: {String(error.message)}</p>;
+
+  const book = data?.items[0];
+
+  if (!book) {
+    return (
+      <Container className="product">
+        <Link className='product-detail__goBack' onClick={handleGoBackClick} variant='link'>
+          <Icon className='product-detail__goBack-icon' name='chevron'/> Volver
+        </Link>
+        <EmptyState
+          link='/catalog'
+          subtitle='Intenta con otro ejemplar o intentalo más tarde'
+          title='Algo salió mal'
+        />
+      </Container>
+    );
   }
 
   return (
@@ -87,16 +103,18 @@ function ProductPage() {
             
 
             <div className="product-detail__actions">
-              <div className="quantity-selector">
-                <button>-</button>
-                <span>2</span>
-                <button>+</button>
-              </div>
-
               {isInCart(book.id) ? (
-                <Button onClick={() => handleRemoveItem(book.id)}>
-                  <Icon className='' name='trash'/>
-                </Button>
+                <>
+                  <div className="quantity-selector">
+                    <QuantitySelector
+                      numOrder={items.find(item => item.id === book?.id)?.quantity || 1}
+                      onChange={(newQuantity) => handleQuantityChange(book?.id, newQuantity)}
+                    />
+                  </div>
+                  <Button onClick={() => handleRemoveItem(book.id)}>
+                    <Icon className='' name='trash'/>
+                  </Button>
+                </>
               ) : (
                 <Button onClick={() => handleOnAddItemClick(book)}>Añadir al carrito</Button>
               )}

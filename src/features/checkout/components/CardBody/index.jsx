@@ -1,8 +1,12 @@
+// Packages
+import cn from 'classnames'
+
+// Styles
 import "./styles.scss";
 
-const CardBody = ({children}) => {
+const CardBody = ({ className, children}) => {
     return (
-        <div className="checkout-card__body">
+        <div className={cn("checkout-card__body", className)}>
             {children}
         </div>
     );

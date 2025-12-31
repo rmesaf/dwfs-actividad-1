@@ -1,7 +1,13 @@
 .search-results {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    padding: 2rem 1rem;
+    gap: 1rem;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .search-results__empty {

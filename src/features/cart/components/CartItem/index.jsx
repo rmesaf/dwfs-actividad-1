@@ -27,9 +27,11 @@ function CartItem ({
             </div>
             <div className='cart-item__price'>
                 {formatCurrency(price, currency)}
-                <Button className="cart-item__delete-icon" aria-label="Cart" onClick={onTrashClick}>
-                    <Icon name="trash" size={24} color="#222222" />
-                </Button>
+                {onTrashClick && (
+                    <Button className="cart-item__delete-icon" aria-label="Cart" onClick={onTrashClick}>
+                        <Icon name="trash" size={24} color="#222222" />
+                    </Button>
+                )}
             </div>
         </div>
     )

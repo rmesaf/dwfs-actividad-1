@@ -14,14 +14,14 @@ export function useCatalog(config, swrOptions = {}) {
         ([, , args]) => fetchGoogleBooksData({ ...args }),
         {
             revalidateOnFocus: false,
-            revalidateIfStale: false,
+            revalidateIfStale: true,
             revalidateOnReconnect: false,
             ...swrOptions,
         }
     );
 
     return {
-        books: data ?? [],
+        data: data ?? {},
         isLoading,
         error,
     };

@@ -9,14 +9,17 @@ function findIsbnByType (item, type) {
 
 function normalizeGoogleBooksData(item) {
     const book = item?.volumeInfo ?? {};
+    const isbn10 = findIsbnByType(book, 'ISBN_10');
+    const isbn13 = findIsbnByType(book, 'ISBN_13');
     return {
         authors: book.authors ?? [],
         categories: book.categories ?? [],
         currency: item?.saleInfo?.listPrice?.currencyCode,
         description: book.description ?? '',
-        id: item.id,
-        isbn10: findIsbnByType(book, 'ISBN_10'),
-        isbn13: findIsbnByType(book, 'ISBN_13'),
+        identification: item.id,
+        id: isbn10 || isbn13 || item?.id,
+        isbn10,
+        isbn13,
         pageCount: book.pageCount ?? 0,
         price: item?.saleInfo?.listPrice?.amount ?? getRandomNumber(100000, 1000),
         printType: book.printType ?? '',
@@ -39,7 +42,11 @@ async function fetchGoogleBooksData({ query = '', page = 0, pageSize = 20 }) {
 
     const response = await fetch(`https://www.googleapis.com/books/v1/volumes?${params.toString()}`);
     const data = await response.json();
-    return (data.items || []).map(normalizeGoogleBooksData);
+    return {
+        items: (data.items || []).map(normalizeGoogleBooksData),
+        totalItems: data.totalItems,
+    };
 };
 
 export default fetchGoogleBooksData;
+

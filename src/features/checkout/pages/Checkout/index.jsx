@@ -12,7 +12,7 @@ export default function CheckoutPage() {
     return (
         <CheckoutProvider>
             <Container className="checkout__container">
-                <h1>Checkout</h1>
+                <h1>CHECKOUT</h1>
                 <Link to="/catalog">Seguir comprando</Link>
                 {totalItems > 0
                 ? (<div className="checkout">

@@ -1,10 +1,11 @@
 // Packages
-import React from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 
 // App
 import Book from 'features/catalog/components/Book';
 import Container from 'shared/components/Container';
+import EmptyState from 'shared/components/EmptyState';
+import Icon from 'shared/components/Icon'
 import Link from 'shared/components/Link';
 import { useCatalog } from 'features/catalog/hooks/useCatalog';
 
@@ -13,45 +14,45 @@ import './styles.scss';
 
 function SearchResultsPage() {
     const [searchParams] = useSearchParams();
+    const navigate = useNavigate();
     const query = searchParams.get('q') || '';
 
-    const { books, isLoading, error } = useCatalog({ query: 'subject:fiction' });
+    const { data, isLoading, error } = useCatalog({ query: `intitle:${query}` });
+
+    const showEmptyState = data?.items?.length === 0;
+
+    const handleGoBackClick = () => {
+        navigate(-1);
+    }
 
     if (isLoading) return <p>Cargando resultados...</p>;
     if (error) return <p>Error: {String(error.message)}</p>;
 
-    const filteredBooks = books.filter(book =>
-        book.title.toLowerCase().includes(query.toLowerCase())
-    );
+    if (showEmptyState) {
+        return (
+            <EmptyState
+                subtitle="Intenta con otro título o revisa si lo escribiste correctamente."
+                title="No hemos encontrado el libro solicitado"
+            />
+        );
+    }
 
     return (
         <Container className="search-results">
-            <h1>Resultados de búsqueda</h1>
-
-            <p>
-                Buscando: <strong>{query}</strong>
-            </p>
-
-            <Link to="/catalog">← Volver al catálogo</Link>
-
-            {filteredBooks.length === 0 ? (
-                <div className="search-results__empty">
-                    <img
-                        src="/src/assets/images/no-results.svg"
-                        alt="No se encontraron resultados"
-                    />
-                    <div className="search-results__empty-text">
-                        <h2>No hemos encontrado el libro solicitado</h2>
-                        <p>Intenta con otro título o revisa si lo escribiste correctamente.</p>
-                    </div>
-                </div>
-            ) : (
-                <ul>
-                    {filteredBooks.map(book => (
-                        <Book className="catalog__list-item" key={book.id} book={book} />
-                    ))}
-                </ul>
-            )}
+            <Link className='product-detail__goBack' onClick={handleGoBackClick} variant='link'>
+                <Icon className='product-detail__goBack-icon' name='chevron'/> Volver
+            </Link>
+            <div className='search-results__text'>
+                <h1>RESULTADOS DE BÚSQUEDA:</h1>
+                <p>
+                    Encontramos <strong>{data?.totalItems}</strong> para la búsqueda: <strong>{query}</strong>
+                </p>
+            </div>
+            <ul className="search-results__list">
+                {data?.items.map(book => (
+                    <Book className="search-results__list-item" key={book.id} book={book} />
+                ))}
+            </ul>
         </Container>
     );
 }

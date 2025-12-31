@@ -17,6 +17,8 @@
 
     &__logo {
         @include font-montserrat(2rem, 600);
+        color: $color-twine;
+        text-decoration: none;
         order: 0;
     }
 

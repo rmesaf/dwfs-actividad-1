@@ -7,7 +7,7 @@
     @include font-montserrat(to-rem(16), 600);
     display: flex;
     gap: 4px;
-    padding: 0;
+    padding-top: 1rem;
     margin-bottom: 1rem;
 
     &-icon {
@@ -96,6 +96,7 @@
 
     &__text {
       @include font-montserrat(1rem, 400);
+      @include truncate-text(8);
       color: $color-doveGray;
       line-height: 1.6;
     }
@@ -132,70 +133,3 @@
   }
 }
 
-
-
-.quantity-selector {
-  display: inline-flex;
-  align-items: center;
-  background-color: white;
-  border: 0.1px solid #666;
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-.quantity-selector button {
-  width: 40px;
-  height: 40px;
-  border: none;
-  font-size: 18px;
-  background-color: transparent;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.2s;
-}
-
-.quantity-selector button:hover {
-  background-color: #e8e8e8;
-}
-
-.quantity-selector span {
-  align-items: center;
-  background-color: white;
-  border-left: 0.1px solid #666;
-  border-right: 0.1px solid #666;
-  display: flex;
-  font-weight: 600;
-  height: 40px;
-  justify-content: center;
-  min-width: 30px;
-  padding: 0 20px;
-  text-align: center;
-}
-
-
-// @media (min-width: 768px) {
-//   .product-detail {
-//     
-//   }
-  
-//   .product-detail__main {
-//     flex-direction: row;
-//     gap: 40px;
-//   }
-  
-//   .product-detail__image {
-//     
-//   }
-  
-//   .product-detail__info {
-//     flex: 1;
-//   }
-// }
-
-// @media (min-width: 1024px) {
-//   .product-detail {
-//     padding: 50px 60px;
-//   }
-// }

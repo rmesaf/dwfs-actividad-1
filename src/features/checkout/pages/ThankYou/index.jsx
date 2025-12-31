@@ -1,6 +1,7 @@
 // App
 import Button from 'shared/components/Button';
 import Container from 'shared/components/Container';
+import ThanksImage from 'assets/images/thanks.svg';
 
 // Styles
 import './styles.scss';
@@ -22,7 +23,7 @@ function ThankYouPage() {
 
       <section className="thank-you__image">
         <img
-          src='./assets/thanks.svg'
+          src={ThanksImage}
           alt="Imagen de agradecimiento"
           className="message-image"
         />
