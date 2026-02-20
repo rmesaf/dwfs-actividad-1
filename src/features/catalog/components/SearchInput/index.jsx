@@ -20,6 +20,7 @@ function SearchInput({ className }) {
     return (
         <div className={cn("search-input", className)}>
             <input
+                id='searchInput'
                 type="text"
                 placeholder="Buscar libros por título..."
                 value={value}
