@@ -16,7 +16,7 @@ export default function Header() {
         <header className='app-header'>
             <Container className='app-header__container'>
                 <Link href="/catalog" className='app-header__logo'>RDP</Link>
-                <SearchInput className="app-header__search"/>
+                {/* <SearchInput className="app-header__search"/> */}
                 <div className='app-header__cart'>
                     <Cart />
                 </div>

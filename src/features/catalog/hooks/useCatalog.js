@@ -2,16 +2,14 @@
 import useSWR from "swr";
 
 // App
-import fetchGoogleBooksData from "features/catalog/api/googleBooks.api.js";
+import fetchBooksCatalogueData from "features/catalog/api/booksCatalogue.api.js";
 
-export function useCatalog(config, swrOptions = {}) {
-    const query = config?.query;
-    const page = config?.page ?? 0;
-    const pageSize = config?.pageSize;
+export function useCatalog(config = {}, swrOptions = {}) {
+    const { title, description, categories, authors, priceRange, ratingRange, page = 0, pageSize } = config;
 
     const { data, error, isLoading } = useSWR(
-        ['catalog', "googleBooks", { query, page, pageSize }],
-        ([, , args]) => fetchGoogleBooksData({ ...args }),
+        ['catalog', "booksCatalogue", { title, description, categories, authors, priceRange, ratingRange, page, pageSize }],
+        ([, , args]) => fetchBooksCatalogueData({ ...args }),
         {
             revalidateOnFocus: false,
             revalidateIfStale: true,

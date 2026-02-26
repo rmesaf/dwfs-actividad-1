@@ -27,11 +27,11 @@ function ProductPage() {
     updateQuantity,
   } = useCart();
 
-  const { data, isLoading, error } = useCatalog({ query:`isbn:${productId}` });
+  const { data, isLoading, error } = useCatalog({ query: `isbn:${productId}` });
 
   const handleOnAddItemClick = book => {
-      addItem({ ...book, quantity: 1 });
-      toast.success(`Added "${book.title}" to cart!`);
+    addItem({ ...book, quantity: 1 });
+    toast.success(`Added "${book.title}" to cart!`);
   };
 
   const handleGoBackClick = () => {
@@ -43,8 +43,8 @@ function ProductPage() {
   }
 
   const handleQuantityChange = (bookId, newQuantity) => {
-      updateQuantity(bookId, newQuantity);
-    };
+    updateQuantity(bookId, newQuantity);
+  };
 
   if (isLoading) return <p>Cargando libro...</p>;
   if (error) return <p>Error: {String(error.message)}</p>;
@@ -55,7 +55,7 @@ function ProductPage() {
     return (
       <Container className="product">
         <Link className='product-detail__goBack' onClick={handleGoBackClick} variant='link'>
-          <Icon className='product-detail__goBack-icon' name='chevron'/> Volver
+          <Icon className='product-detail__goBack-icon' name='chevron' /> Volver
         </Link>
         <EmptyState
           link='/catalog'
@@ -70,26 +70,23 @@ function ProductPage() {
     <Container className="product">
       <div className="product-detail">
         <Link className='product-detail__goBack' onClick={handleGoBackClick} variant='link'>
-          <Icon className='product-detail__goBack-icon' name='chevron'/> Volver
+          <Icon className='product-detail__goBack-icon' name='chevron' /> Volver
         </Link>
 
         <section className="product-detail__main">
           <div className="product-detail__image">
-              {book.thumbnail && (<img src={book.thumbnail} alt={book.title} />)}
+            {book.thumbnail && (<img src={book.thumbnail} alt={book.title} />)}
           </div>
 
           <div className="product-detail__info">
             <p className="product-detail__category">
-              <Icon className='' name='tag'/>
+              <Icon className='' name='tag' />
               {book.categories?.join(', ')}
             </p>
             <h1 className="product-detail__title">{book.title}</h1>
             <p className="product-detail__author">{book.authors?.join(', ')}</p>
 
             <div className="product-detail__price-row">
-              <p className="product-detail__publisher">
-                {`Editorial: ${book.publisher}`}
-              </p>
               <p className="product-detail__price">{formatCurrency(book.price)}</p>
             </div>
             {book.description && (
@@ -100,7 +97,7 @@ function ProductPage() {
                 </p>
               </div>
             )}
-            
+
 
             <div className="product-detail__actions">
               {isInCart(book.id) ? (
@@ -112,7 +109,7 @@ function ProductPage() {
                     />
                   </div>
                   <Button onClick={() => handleRemoveItem(book.id)}>
-                    <Icon className='' name='trash'/>
+                    <Icon className='' name='trash' />
                   </Button>
                 </>
               ) : (
