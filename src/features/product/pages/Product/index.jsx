@@ -1,6 +1,8 @@
 // Packages
+import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { toast } from 'sonner';
+import axios from 'axios';
 
 // App
 import Button from 'shared/components/Button';
@@ -10,13 +12,13 @@ import Icon from 'shared/components/Icon'
 import Link from 'shared/components/Link';
 import QuantitySelector from "features/catalog/components/QuantitySelector";
 import { formatCurrency } from 'shared/utils/formatCurrency';
-import { useCatalog } from 'features/catalog/hooks/useCatalog.js';
 import { useCart } from 'features/cart/hooks/useCart';
 
 // Styles
 import './styles.scss';
 
 function ProductPage() {
+  const API_URL = import.meta.env.VITE_API_URL;
   const { productId } = useParams();
   const navigate = useNavigate();
   const {
@@ -27,7 +29,8 @@ function ProductPage() {
     updateQuantity,
   } = useCart();
 
-  const { data, isLoading, error } = useCatalog({ query: `isbn:${productId}` });
+  const [book, setBook] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   const handleOnAddItemClick = book => {
     addItem({ ...book, quantity: 1 });
@@ -46,10 +49,20 @@ function ProductPage() {
     updateQuantity(bookId, newQuantity);
   };
 
-  if (isLoading) return <p>Cargando libro...</p>;
-  if (error) return <p>Error: {String(error.message)}</p>;
+  useEffect(() => {
+    axios.get(`${API_URL}/ms-books-catalogue/books/${productId}`)
+      .then(response => {
+        setBook(response.data);
+        setIsLoading(false);
+      })
+      .catch(error => {
+        console.error("Error while fetching books", error);
+        setBook({});
+        setIsLoading(false);
+      });
+  }, []);
 
-  const book = data?.items[0];
+  if (isLoading) return <p>Cargando libro...</p>;
 
   if (!book) {
     return (
@@ -75,16 +88,16 @@ function ProductPage() {
 
         <section className="product-detail__main">
           <div className="product-detail__image">
-            {book.thumbnail && (<img src={book.thumbnail} alt={book.title} />)}
+            {book.coverImg && (<img src={book.coverImg} alt={book.title} />)}
           </div>
 
           <div className="product-detail__info">
             <p className="product-detail__category">
               <Icon className='' name='tag' />
-              {book.categories?.join(', ')}
+              {book.categories?.map(category => category.description).join(', ')}
             </p>
             <h1 className="product-detail__title">{book.title}</h1>
-            <p className="product-detail__author">{book.authors?.join(', ')}</p>
+            <p className="product-detail__author">{book.authors?.map(author => author.name).join(', ')}</p>
 
             <div className="product-detail__price-row">
               <p className="product-detail__price">{formatCurrency(book.price)}</p>
