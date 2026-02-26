@@ -1,27 +1,27 @@
-import {useNavigate} from "react-router-dom";
-import {toast} from "sonner";
-import {useForm} from "react-hook-form";
+import { useNavigate } from "react-router-dom";
+import { toast } from "sonner";
+import { useForm } from "react-hook-form";
 import Card from "../Card";
 import CardHeader from "../CardHeader";
 import CardBody from "../CardBody";
 import Form from "../Form";
 
-import {useCheckout} from "features/checkout/context/CheckoutContext";
-import {useCartContext} from "features/cart/context/CartProvider";
+import { useCheckout } from "features/checkout/context/CheckoutContext";
+import { useCartContext } from "features/cart/context/CartProvider";
 
-import {FEES, PAYMENT_DEFAULT_STATE} from "./constants";
+import { FEES, PAYMENT_DEFAULT_STATE } from "./constants";
 
 import "./styles.scss"
 import Button from "../../../../shared/components/Button/index.jsx";
-import {Col, Row} from "../Grid/index";
+import { Col, Row } from "../Grid/index";
 import FormInput from "../FormInput/index.jsx";
 
 
 const StepPayment = () => {
     const navigate = useNavigate();
-    const {step, billing, shipment, goTo, isSubmitting, setIsSubmitting} = useCheckout();
+    const { step, billing, shipment, goTo, isSubmitting, setIsSubmitting } = useCheckout();
 
-    const {clearCart} = useCartContext();
+    const { clearCart } = useCartContext();
 
     const isCompleted = (billing.fullName !== "" && shipment.address !== "");
     const isActive = step === "payment";
@@ -30,7 +30,7 @@ const StepPayment = () => {
     const {
         register,
         handleSubmit,
-        formState: {errors},
+        formState: { errors },
     } = useForm({
         mode: "onChange",
         defaultValues: PAYMENT_DEFAULT_STATE,
@@ -46,7 +46,7 @@ const StepPayment = () => {
             setIsSubmitting(false);
             navigate("/thank-you");
         } catch (error) {
-            toast.error("Hubo un error al procesar el pago");
+            toast.error("Hubo un error al procesar el pago", error);
             setIsSubmitting(false);
         }
     };
@@ -75,7 +75,7 @@ const StepPayment = () => {
                                     error={errors.cardNumber && errors.cardNumber.message}
                                     register={register("cardNumber", {
                                         required: "Please enter a card number.",
-                                        pattern: {value: /^\d{16}$/, message: "Please enter a valid card number"}
+                                        pattern: { value: /^\d{16}$/, message: "Please enter a valid card number" }
                                     })}
                                 />
                             </Col>
@@ -86,7 +86,7 @@ const StepPayment = () => {
                                     label={"Name on card"}
                                     placeholder={"Please enter a name on card."}
                                     error={errors.nameOnCard && errors.nameOnCard.message}
-                                    register={register("nameOnCard", {required: "Please enter a name on card."})}
+                                    register={register("nameOnCard", { required: "Please enter a name on card." })}
                                 />
                             </Col>
                             <Col size={"6"}>
@@ -97,7 +97,7 @@ const StepPayment = () => {
                                     options={FEES}
                                     placeholder={"Please chose an option..."}
                                     error={errors.fees && errors.fees.message}
-                                    register={register("fees", {required: "Please chose an option..."})}
+                                    register={register("fees", { required: "Please chose an option..." })}
                                 />
 
                             </Col>
@@ -137,7 +137,7 @@ const StepPayment = () => {
                                     type="checkbox"
                                     id="sameAddress"
                                     label={"Use the shipment address as the payment address"}
-                                    register={register("sameAddress", {value: true})}
+                                    register={register("sameAddress", { value: true })}
                                 />
                             </Col>
                         </Row>

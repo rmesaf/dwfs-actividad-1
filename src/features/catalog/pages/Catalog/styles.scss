@@ -6,8 +6,12 @@
     padding: 2rem 1rem;
     gap: 2rem;
 
-    &__list {
+    &__content {
         display: flex;
-        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    &__agreggates {
+        flex: 1;
     }
 }

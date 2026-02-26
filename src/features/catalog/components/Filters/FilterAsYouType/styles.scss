@@ -1,15 +1,21 @@
 @use 'shared/styles/abstracts.scss' as *;
 
-.search-input {
+.filter-as-you-type {
+    width: 100%;
+    margin-bottom: 1rem;
+
+    &__label {
+        @include font-montserrat(0.875rem, 600);
+    }
+
     & input {
-        @include font-montserrat(1rem, 600);
+        @include font-montserrat(to-rem(14), 400);
         border-radius: 6px;
         border: 1px solid $color-alto;
         height: 36px;
         outline: none;
         padding: 0 1rem;
-        flex: 1;
-        max-width: to-rem(430);
+        width: 100%;
 
         &::placeholder {
             color: $color-alto;

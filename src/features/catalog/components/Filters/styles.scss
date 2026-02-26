@@ -1,0 +1,16 @@
+@use 'shared/styles/abstracts.scss' as *;
+
+.filters {
+    &__actions {
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    &__actions-item {
+        @include font-montserrat(to-rem(14), 500);
+        flex: 1;
+        padding: to-rem(2) to-rem(6);
+        text-decoration: none;
+    }
+}

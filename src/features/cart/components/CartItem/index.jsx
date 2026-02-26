@@ -2,17 +2,17 @@
 import cn from 'classnames';
 
 // App
-import Button from 'shared/components/Button'; 
+import Button from 'shared/components/Button';
 import Icon from 'shared/components/Icon';
 import { formatCurrency } from 'shared/utils/formatCurrency';
 
 // Styles
 import './styles.scss';
 
-function CartItem ({
+function CartItem({
     className,
     currency,
-    thumbnail,
+    coverImg,
     price,
     title,
     onTrashClick,
@@ -20,7 +20,7 @@ function CartItem ({
     return (
         <div className={cn('cart-item', className)}>
             <div className='cart-item__thumbnail'>
-                <img src={thumbnail} alt={title} />
+                <img src={coverImg} alt={title} />
             </div>
             <div className='cart-item__content'>
                 <h3 className='cart-item__title'>{title}</h3>

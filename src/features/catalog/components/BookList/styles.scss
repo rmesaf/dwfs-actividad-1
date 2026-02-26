@@ -1,0 +1,17 @@
+@use 'shared/styles/abstracts.scss' as *;
+
+.book-list {
+    flex: 3;
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__load-more-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        width: 100%;
+    }
+}

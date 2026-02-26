@@ -11,7 +11,7 @@ import WelcomePage from 'shared/pages/Welcome';
 const AppRouter = () => {
     return (
         <Routes>
-            <Route path="/" element={<CatalogPage />} />
+            <Route path="/" element={<WelcomePage />} />
             <Route path="/catalog" element={<CatalogPage />} />
             <Route path="/search-results" element={<SearchResultsPage />} />
             <Route path="/checkout" element={<CheckoutPage />} />

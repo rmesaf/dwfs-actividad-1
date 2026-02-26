@@ -15,7 +15,7 @@ import TrashButton from 'features/catalog/components/TrashButton';
 // Styles
 import './styles.scss';
 
-function Book ({
+function Book({
     className = '',
     book,
 }) {
@@ -43,18 +43,18 @@ function Book ({
         <li className={cn("book", className)}>
             <Link className="book__link" to={`/product/${book?.id}`}>
                 <div className='book__img'>
-                    <img src={book?.thumbnail} alt={book?.title} />
+                    <img src={book?.coverImg} alt={book?.title} />
                 </div>
                 <h2 className='book__title'>{book?.title}</h2>
-                <p>{book?.authors.join(", ")}</p>
+                <p>{book?.authors?.map(author => author.name).join(", ")}</p>
                 <div className="book__info">
                     <span>{formatCurrency(book?.price)}</span>
                     <HeartButton
                         isFavorite={book?.isFavorite}
-                        toggleFavorite={() => {}}
+                        toggleFavorite={() => { }}
                     />
                     <div className="book__info-rating">
-                        <span>{book?.ratings}</span>
+                        <span>{book?.rating}</span>
                         <Icon
                             name="star-full"
                             size={30}

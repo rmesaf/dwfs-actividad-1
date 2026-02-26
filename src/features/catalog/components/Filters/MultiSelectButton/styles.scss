@@ -1,0 +1,53 @@
+@use 'shared/styles/abstracts.scss' as *;
+
+.multi-select-button {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    &__label {
+        @include font-montserrat(0.875rem, 600);
+    }
+
+    &__options {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    &__checkbox {
+        position: absolute;
+        opacity: 0;
+        height: 0;
+        width: 0;
+        pointer-events: none;
+
+        &-label {
+            @include font-montserrat(to-rem(12), 400);
+            @include truncate-text(1);
+            background-color: transparent;
+            border-radius: 25px;
+            border: 1px solid $color-spectra;
+            color: $color-spectra;
+            cursor: pointer;
+            display: inline-block;
+            padding: to-rem(2) to-rem(6);
+            transition: all 0.3s ease;
+            user-select: none;
+            max-width: fit-content;
+        }
+
+        &-label {
+            &:hover {
+                font-weight: 500;
+            }
+
+            &--checked {
+                background-color: $color-spectra;
+                border: none;
+                color: $color-springWood;
+            }
+        }
+    }
+}

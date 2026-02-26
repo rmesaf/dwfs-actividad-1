@@ -17,7 +17,7 @@ function SearchResultsPage() {
     const navigate = useNavigate();
     const query = searchParams.get('q') || '';
 
-    const { data, isLoading, error } = useCatalog({ query: `intitle:${query}` });
+    const { data, isLoading, error } = useCatalog({ title: query });
 
     const showEmptyState = data?.items?.length === 0;
 
@@ -40,7 +40,7 @@ function SearchResultsPage() {
     return (
         <Container className="search-results">
             <Link className='product-detail__goBack' onClick={handleGoBackClick} variant='link'>
-                <Icon className='product-detail__goBack-icon' name='chevron'/> Volver
+                <Icon className='product-detail__goBack-icon' name='chevron' /> Volver
             </Link>
             <div className='search-results__text'>
                 <h1>RESULTADOS DE BÚSQUEDA:</h1>
