@@ -1,5 +1,5 @@
-export function formatCurrency (value, currency = 'COP') {
-    const locale = navigator.language || "es-CO";
+export function formatCurrency(value, currency = 'EUR') {
+    const locale = navigator.language || "es-ES";
     const formatter = new Intl.NumberFormat(locale, {
         style: "currency",
         currency,

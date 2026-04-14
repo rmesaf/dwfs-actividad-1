@@ -10,6 +10,7 @@ import Container from 'shared/components/Container';
 import EmptyState from 'shared/components/EmptyState';
 import Icon from 'shared/components/Icon'
 import Link from 'shared/components/Link';
+import ProductSkeleton from 'features/product/components/ProductSkeleton';
 import QuantitySelector from "features/catalog/components/QuantitySelector";
 import { formatCurrency } from 'shared/utils/formatCurrency';
 import { useCart } from 'features/cart/hooks/useCart';
@@ -50,19 +51,38 @@ function ProductPage() {
   };
 
   useEffect(() => {
-    axios.get(`${API_URL}/ms-books-catalogue/books/${productId}`)
-      .then(response => {
-        setBook(response.data);
-        setIsLoading(false);
-      })
-      .catch(error => {
-        console.error("Error while fetching books", error);
-        setBook({});
-        setIsLoading(false);
-      });
-  }, []);
+    let ignore = false;
 
-  if (isLoading) return <p>Cargando libro...</p>;
+    setTimeout(() => {
+      axios.get('/mock.json')
+        .then(response => {
+          if (!ignore) {
+            const allBooks = response.data.books || [];
+            const foundBook = allBooks.find(b => b.id === productId);
+            setBook(foundBook || null);
+            setIsLoading(false);
+          }
+        })
+        .catch(error => {
+          if (!ignore) {
+            console.error("Error while fetching mock books", error);
+            setBook(null);
+            setIsLoading(false);
+          }
+        });
+    }, 500); // Simular servicio
+
+    return () => {
+        ignore = true;
+    };
+  }, [productId]);
+  if (isLoading) {
+    return (
+      <Container className="product">
+        <ProductSkeleton />
+      </Container>
+    );
+  }
 
   if (!book) {
     return (

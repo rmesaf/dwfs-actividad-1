@@ -1,0 +1,1105 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Cien años de soledad",
+      "authors": [
+        {
+          "name": "Gabriel García Márquez"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook0/300/400",
+      "price": 25.99,
+      "rating": "4.8",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "1984",
+      "authors": [
+        {
+          "name": "George Orwell"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook1/300/400",
+      "price": 19.99,
+      "rating": "3.9",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Orgullo y prejuicio",
+      "authors": [
+        {
+          "name": "Jane Austen"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook2/300/400",
+      "price": 15.5,
+      "rating": "3.9",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Don Quijote de la Mancha",
+      "authors": [
+        {
+          "name": "Miguel de Cervantes"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook3/300/400",
+      "price": 29.99,
+      "rating": "3.6",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "El principito",
+      "authors": [
+        {
+          "name": "Antoine de Saint-Exupéry"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook4/300/400",
+      "price": 12,
+      "rating": "3.7",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Matar a un ruiseñor",
+      "authors": [
+        {
+          "name": "Harper Lee"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook5/300/400",
+      "price": 18.25,
+      "rating": "4.2",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "El gran Gatsby",
+      "authors": [
+        {
+          "name": "F. Scott Fitzgerald"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook6/300/400",
+      "price": 14.99,
+      "rating": "3.6",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Fahrenheit 451",
+      "authors": [
+        {
+          "name": "Ray Bradbury"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook7/300/400",
+      "price": 16.5,
+      "rating": "4.4",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Drácula",
+      "authors": [
+        {
+          "name": "Bram Stoker"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook8/300/400",
+      "price": 13.99,
+      "rating": "4.2",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Frankenstein",
+      "authors": [
+        {
+          "name": "Mary Shelley"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook9/300/400",
+      "price": 14.2,
+      "rating": "4.7",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Crónica de una muerte anunciada",
+      "authors": [
+        {
+          "name": "Gabriel García Márquez"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook10/300/400",
+      "price": 17,
+      "rating": "3.8",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "El alquimista",
+      "authors": [
+        {
+          "name": "Paulo Coelho"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook11/300/400",
+      "price": 21.5,
+      "rating": "3.7",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": "La sombra del viento",
+      "authors": [
+        {
+          "name": "Carlos Ruiz Zafón"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook12/300/400",
+      "price": 24.99,
+      "rating": "4.0",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Los pilares de la Tierra",
+      "authors": [
+        {
+          "name": "Ken Follett"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook13/300/400",
+      "price": 32,
+      "rating": "4.7",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "title": "El señor de los anillos",
+      "authors": [
+        {
+          "name": "J.R.R. Tolkien"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook14/300/400",
+      "price": 35.5,
+      "rating": "4.1",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "title": "Harry Potter y la piedra filosofal",
+      "authors": [
+        {
+          "name": "J.K. Rowling"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook15/300/400",
+      "price": 22.9,
+      "rating": "4.1",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "title": "El retrato de Dorian Gray",
+      "authors": [
+        {
+          "name": "Oscar Wilde"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook16/300/400",
+      "price": 15,
+      "rating": "4.5",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "title": "Un mundo feliz",
+      "authors": [
+        {
+          "name": "Aldous Huxley"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook17/300/400",
+      "price": 19,
+      "rating": "3.6",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "title": "El código Da Vinci",
+      "authors": [
+        {
+          "name": "Dan Brown"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook18/300/400",
+      "price": 20.99,
+      "rating": "3.6",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "title": "El amor en los tiempos del cólera",
+      "authors": [
+        {
+          "name": "Gabriel García Márquez"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook19/300/400",
+      "price": 23.5,
+      "rating": "3.8",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "title": "Pedro Páramo",
+      "authors": [
+        {
+          "name": "Juan Rulfo"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook20/300/400",
+      "price": 16.99,
+      "rating": "5.0",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "22",
+      "title": "Rayuela",
+      "authors": [
+        {
+          "name": "Julio Cortázar"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook21/300/400",
+      "price": 27,
+      "rating": "4.8",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "title": "La casa de los espíritus",
+      "authors": [
+        {
+          "name": "Isabel Allende"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook22/300/400",
+      "price": 26.5,
+      "rating": "4.5",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "24",
+      "title": "Los miserables",
+      "authors": [
+        {
+          "name": "Victor Hugo"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook23/300/400",
+      "price": 28,
+      "rating": "3.8",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "title": "Crimen y castigo",
+      "authors": [
+        {
+          "name": "Fiódor Dostoyevski"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook24/300/400",
+      "price": 25,
+      "rating": "4.0",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "26",
+      "title": "Memorias de una geisha",
+      "authors": [
+        {
+          "name": "Arthur Golden"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook25/300/400",
+      "price": 18.99,
+      "rating": "4.8",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "27",
+      "title": "El perfume",
+      "authors": [
+        {
+          "name": "Patrick Süskind"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook26/300/400",
+      "price": 17.5,
+      "rating": "4.2",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "28",
+      "title": "Rebelión en la granja",
+      "authors": [
+        {
+          "name": "George Orwell"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook27/300/400",
+      "price": 14.5,
+      "rating": "3.8",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "29",
+      "title": "La ladrona de libros",
+      "authors": [
+        {
+          "name": "Markus Zusak"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook28/300/400",
+      "price": 22,
+      "rating": "3.6",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "30",
+      "title": "El cuento de la criada",
+      "authors": [
+        {
+          "name": "Margaret Atwood"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook29/300/400",
+      "price": 21,
+      "rating": "3.6",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "31",
+      "title": "Cometas en el cielo",
+      "authors": [
+        {
+          "name": "Khaled Hosseini"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook30/300/400",
+      "price": 19.5,
+      "rating": "4.1",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "32",
+      "title": "Cumbres borrascosas",
+      "authors": [
+        {
+          "name": "Emily Brontë"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook31/300/400",
+      "price": 16,
+      "rating": "3.9",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "33",
+      "title": "Anna Karenina",
+      "authors": [
+        {
+          "name": "León Tolstói"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook32/300/400",
+      "price": 29.5,
+      "rating": "3.9",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "34",
+      "title": "La odisea",
+      "authors": [
+        {
+          "name": "Homero"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook33/300/400",
+      "price": 18,
+      "rating": "4.5",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "35",
+      "title": "La ilíada",
+      "authors": [
+        {
+          "name": "Homero"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook34/300/400",
+      "price": 18,
+      "rating": "3.8",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "36",
+      "title": "En busca del tiempo perdido",
+      "authors": [
+        {
+          "name": "Marcel Proust"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook35/300/400",
+      "price": 34.99,
+      "rating": "3.6",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "37",
+      "title": "Lolita",
+      "authors": [
+        {
+          "name": "Vladimir Nabokov"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook36/300/400",
+      "price": 20.5,
+      "rating": "4.2",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "38",
+      "title": "Alicia en el país de las maravillas",
+      "authors": [
+        {
+          "name": "Lewis Carroll"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook37/300/400",
+      "price": 15.99,
+      "rating": "3.6",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "39",
+      "title": "El extranjero",
+      "authors": [
+        {
+          "name": "Albert Camus"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook38/300/400",
+      "price": 13.5,
+      "rating": "4.1",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "40",
+      "title": "Moby-Dick",
+      "authors": [
+        {
+          "name": "Herman Melville"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook39/300/400",
+      "price": 24.5,
+      "rating": "4.4",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "41",
+      "title": "Ensayo sobre la ceguera",
+      "authors": [
+        {
+          "name": "José Saramago"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook40/300/400",
+      "price": 23,
+      "rating": "4.5",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "42",
+      "title": "El túnel",
+      "authors": [
+        {
+          "name": "Ernesto Sabato"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook41/300/400",
+      "price": 14,
+      "rating": "4.9",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "43",
+      "title": "A sangre fría",
+      "authors": [
+        {
+          "name": "Truman Capote"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook42/300/400",
+      "price": 19.99,
+      "rating": "4.0",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "44",
+      "title": "Jane Eyre",
+      "authors": [
+        {
+          "name": "Charlotte Brontë"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook43/300/400",
+      "price": 17.5,
+      "rating": "4.9",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "45",
+      "title": "La metamorfosis",
+      "authors": [
+        {
+          "name": "Franz Kafka"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook44/300/400",
+      "price": 12.99,
+      "rating": "3.8",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "46",
+      "title": "Las mil y una noches",
+      "authors": [
+        {
+          "name": "Anónimo"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook45/300/400",
+      "price": 30,
+      "rating": "4.4",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "47",
+      "title": "El ruido y la furia",
+      "authors": [
+        {
+          "name": "William Faulkner"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook46/300/400",
+      "price": 22.5,
+      "rating": "5.0",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "48",
+      "title": "Mil soles espléndidos",
+      "authors": [
+        {
+          "name": "Khaled Hosseini"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook47/300/400",
+      "price": 20,
+      "rating": "4.1",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "49",
+      "title": "Dune",
+      "authors": [
+        {
+          "name": "Frank Herbert"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook48/300/400",
+      "price": 28.5,
+      "rating": "4.3",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    },
+    {
+      "id": "50",
+      "title": "El Hobbit",
+      "authors": [
+        {
+          "name": "J.R.R. Tolkien"
+        }
+      ],
+      "coverImg": "https://picsum.photos/seed/realisticbook49/300/400",
+      "price": 18.5,
+      "rating": "4.5",
+      "isFavorite": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed malesuada, turpis vel auctor malesuada, ipsum purus luctus libero, vel euismod tortor dolor vel sapien. Aenean euismod condimentum ex, vitae scelerisque sem ullamcorper et. Suspendisse potenti. Nam nec urna vel felis tristique suscipit. Curabitur convallis ligula id sem dapibus, ut rhoncus erat pellentesque. Praesent fringilla tincidunt efficitur. Integer vehicula metus a est blandit, sed feugiat magna scelerisque. Fusce posuere orci vitae neque pharetra aliquam. Nunc consequat nisl et cursus congue. Vestibulum in augue non erat volutpat consequat et non urna. Proin finibus, lectus eget fermentum mollis, risus urna scelerisque dui, et interdum tortor nisi vel felis. Aliquam lorem erat, tincidunt vel feugiat sed, viverra at nisi.",
+      "categories": [
+        {
+          "description": "Clásico"
+        },
+        {
+          "description": "Ficción"
+        }
+      ]
+    }
+  ],
+  "aggs": {}
+}
